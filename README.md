@@ -4,7 +4,8 @@ Whereupon a control node - ansible on Ubuntu is used to demonstrate a simple aut
 Redhat and Ubuntu system (managed nodes) by installing simple apache (httpd) server on them.
 You must have an AWS account to be able to replicate this lab.  
 You must have setup the following on your system, which could be mac or linux:  
-Created a keypair using the command ssh-keygen, this keypair must be in your Terraform project directory.
+Created a keypair using the command ssh-keygen, this keypair must be in your Terraform project directory.  
+AWS will use this public key to provision the EC2 instances. 
 VS Code  
 AWS CLI  
 Terraform on VS Code
