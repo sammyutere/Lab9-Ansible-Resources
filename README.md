@@ -33,8 +33,9 @@ Press letter I to get into insert mode,
 press the enter key to move down the previous public key that was added during provisioning of the  
 EC2 instance and paste the public key that was generated from the ansible EC2 instance.  
 Press esc key to get to command mode, type :wq! And press enter key to save and exit.  
-The same process should be done for the ubuntu (managed node).  
-Note that the redhat instance now has two public keys, so it is possible for the ansible (control node) to  
+Step 7:  
+Repeat step 5 and 6 for the ubuntu (managed node).  
+Note that the redhat and ubuntu instances now have two public keys, so it is possible for the ansible (control node) to  
 establish ssh connection with the redhat (managed node) and the ubuntu (managed node).  
 It is also possible to establish an ssh connection with all the instances from your local machine  
 which contains the private key and the public key (which Terraform used to provision the instances on AWS).
