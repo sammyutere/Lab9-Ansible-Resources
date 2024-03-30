@@ -45,11 +45,13 @@ This file determines how ansible is able to locate the ip addresses of the manag
 This is where the ip addresses of the target servers are stored.  
 Press letter I to get into insert mode,  
 press the enter key to move down the contents and the paste the following at the top of the file,  
+  
 [all:vars]
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
 [host-1]
-18.171.175.192 ansible_user=ec2-user #redhat
+18.171.175.192 ansible_user=ec2-user #redhat  
+  
 [host-2]
 35.177.172.123 ansible_user=ubuntu #ubuntu  
 
