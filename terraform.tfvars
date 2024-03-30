@@ -1,0 +1,6 @@
+vpc_cidr            = "10.0.0.0/16"
+public_subnet1_cidr = "10.0.1.0/24"
+az1                 = "eu-west-2a"
+path_to_keypair     = "./Lab8.pub"
+red-hat             = "ami-035cecbff25e0d91e"
+ubuntu              = "ami-0b9932f4918a00c4f"
