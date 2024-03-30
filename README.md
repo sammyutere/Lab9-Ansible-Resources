@@ -74,7 +74,16 @@ Which if allowed to be on, will hinder automation in a production environment.
 
 Step 9:  
 Use the command ansible -m ping host-2 or ansible -m ping host-1 or ansible -m ping all  
-to test connectivity between the control node and managed nodes.
+to test connectivity between the control node and managed nodes.  
+
+Step 10:  
+Use the command touch apache.yml to create ansible playbook file.  
+Press letter I to get into insert mode, type in the code as shown in the attached file.  
+Check your code at, https://jsonformatter.org/yaml-validator before pasting it in the apache.yml file.
+
+![ansible-playbook](https://github.com/sammyutere/Lab9-Ansible-Resources/assets/115847964/a9fa01d0-550a-4379-b136-6b5641bcf349)  
+
+Press esc key to get to command mode, type :wq! And press enter key to save and exit. 
 
 
 
