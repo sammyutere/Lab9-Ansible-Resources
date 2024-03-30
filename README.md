@@ -5,7 +5,7 @@ Redhat and Ubuntu system (managed nodes) by installing simple apache (httpd) ser
 You must have an AWS account to be able to replicate this lab.  
 You must have setup the following on your system, which could be mac or linux:  
 Created a keypair using the command ssh-keygen, this keypair must be in your Terraform project directory.  
-AWS will use this public key to provision the EC2 instances. 
+AWS will use the public key to provision the EC2 instances but the private key will remain in your local machine.  
 VS Code  
 AWS CLI  
 Terraform on VS Code
