@@ -83,7 +83,20 @@ Check your code at, https://jsonformatter.org/yaml-validator before pasting it i
 
 ![ansible-playbook](https://github.com/sammyutere/Lab9-Ansible-Resources/assets/115847964/a9fa01d0-550a-4379-b136-6b5641bcf349)  
 
-Press esc key to get to command mode, type :wq! And press enter key to save and exit. 
+Press esc key to get to command mode, type :wq! And press enter key to save and exit.  
+
+Step 11:  
+Use the command ansible-playbook apache.yml –syntax-check to check your syntax.  
+
+Step 12:  
+Use the command ansible-playbook apache.yml to execute the playbook.  
+Note:  
+It is advisable to be in the directory where the yaml file is located, usually in the default directory.  
+If it is not in the default directory use ansible-playbook -i full-path-to-playbook-file.  
+
+Step 13:  
+Copy the public ip addresses of the managed nodes and paste them on to a browser to  
+verify that apache(httpd) was successfully configured by the ansible control node.
 
 
 
