@@ -19,7 +19,8 @@ Ensure you copy and paste the output ip addresses somewhere - you are going to n
 Step 3:  
 ssh into the ansible server and use ssh-keygen command to generate keypairs  
 The keys would be used by the ansible control node for remote ssh connection to the managed nodes, 
-the redhat and ubuntu servers. The key pair in Linux systems is located by default in the .ssh directory.  
+the redhat and ubuntu servers.  
+The key pair in Linux systems is located by default in the .ssh directory.  
 The public key will be copied into the authorized_keys file of the managed nodes, the redhat and ubuntu servers.  
 Step 4:
 Use the command cd /home/ubuntu/.ssh and cd /home/redhat/.ssh to change directory to the location of the keypair files
