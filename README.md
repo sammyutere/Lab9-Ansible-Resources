@@ -1,6 +1,6 @@
 # Lab9-Ansible-Resources
-This work demonstates simple configuration management principles.  Whereupon a control node - ansible on Ubuntu is used to demonstrate a simple automated management of   Redhat and Ubuntu system (managed nodes) by installing simple apache (httpd) server on them.
-You must have an AWS account to be able to replicate this lab.  You must have setup the following on your system, which could be mac or linux:  VS Code  AWS CLI  Terraform on VS Code
+This work demonstates simple configuration management principles.\ Whereupon a control node - ansible on Ubuntu is used to demonstrate a simple automated management of\ Redhat and Ubuntu system (managed nodes) by installing simple apache (httpd) server on them.
+You must have an AWS account to be able to replicate this lab.\ You must have setup the following on your system, which could be mac or linux:\ VS Code \ AWS CLI\ Terraform on VS Code
 
 Steps to Follow:
 Step 1:
