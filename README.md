@@ -1,7 +1,7 @@
 # Lab9-Ansible-Resources
 This work demonstates simple configuration management principles.  
 Whereupon a control node - ansible on Ubuntu is used to demonstrate a simple automated management of  
-Redhat and Ubuntu system (managed nodes) by installing simple apache (httpd) server on them.
+Redhat and Ubuntu system (managed nodes) by installing simple apache (httpd) server on them.  
 You must have an AWS account to be able to replicate this lab.  
 You must have setup the following on your system, which could be mac or linux:  
 Created a keypair using the command ssh-keygen, this keypair must be in your Terraform project directory.  
