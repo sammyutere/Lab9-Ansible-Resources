@@ -38,6 +38,28 @@ Repeat step 5 and 6 for the ubuntu (managed node).
 Note that the redhat and ubuntu instances now have two public keys, so it is possible for the ansible (control node) to  
 establish ssh connection with the redhat (managed node) and the ubuntu (managed node).  
 It is also possible to establish an ssh connection with all the instances from your local machine  
-which contains the private key and the public key (which Terraform used to provision the instances on AWS).
+which contains the private key and the public key (which Terraform used to provision the instances on AWS).  
+Step 8:  
+Use the command sudo vi /etc/ansible/hosts to update the host inventory file on ansible.  
+This file determines how ansible is able to locate the ip addresses of the managed nodes.  
+This is where the ip addresses of the target servers are stored.  
+Press letter I to get into insert mode,  
+press the enter key to move down the contents and the paste the following at the top of the file,  
+[all:vars]
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
+[host-1]
+18.171.175.192 ansible_user=ec2-user #redhat
+[host-2]
+35.177.172.123 ansible_user=ubuntu #ubuntu  
+
+Note the Following:  
+The ip addresses are added to different groups because they are of different Linux distros  
+hence ansible is going to connect to them differently.  
+In a production environment or server it would be advisable to add the private ip, instead of the public ip which can change.  
+
+The first line of code is the strict hostname checking switch.  
+It switches off the prompt asking for approval during connection from ansible (control node) to any managed node.  
+Which if allowed to be on, will hinder automation in a production environment.
 
 
